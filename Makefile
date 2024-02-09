@@ -1,5 +1,5 @@
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -g
+CFLAGS = -Wall -Werror -Wextra -g -I$(INCLUDE_DIR)
 LDFLAGS = -lreadline
 RM = rm -f
 
@@ -9,6 +9,7 @@ NAME = cub_3d
 LIBFTDIR = ./libft
 LIBFT = $(LIBFTDIR)/libft.a
 
+INCLUDE_DIR = include
 #MLX
 LIBMLXDIR = ./minilibx-linux
 LIBMLX = $(LIBMLXDIR)/libmlx.a
